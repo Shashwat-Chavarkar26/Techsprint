@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>body {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+form input, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.claim-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.claim-btn:hover {
+  background-color: #1b5e20;
+}
+
+#popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  z-index: 1000;
+  font-weight: bold;
+}
+#popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnnaSetu - NGO</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* your existing CSS (no changes) */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🤝 AnnaSetu - NGO</h1>
+    <p>View available food donations and claim them!</p>
+  </header>
+
+  <section>
+    <center><h2>Available Donations</h2>
+    <ul id="ngoDonationList"></ul>
+    </center>
+  </section>
+  
+
+ <div id="popup">✅ Claimed!</div>
+  <!-- ✅ Move scripts here -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+  
+ 
+</body>
+</html>

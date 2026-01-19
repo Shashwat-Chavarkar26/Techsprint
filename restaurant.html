@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>body {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+form input, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnnaSetu - Restaurant</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body><center>
+  <header>
+    <h1>🍛 AnnaSetu - Restaurant</h1>
+    <p>Post your surplus food and help NGOs!</p>
+  </header>
+
+  <section>
+    <h2>Post Surplus Food</h2>
+    <form id="donationForm">
+      <input type="text" id="restaurantName" placeholder="Restaurant Name" required />
+      <input type="text" id="foodDetails" placeholder="Food Details" required />
+      <input type="number" id="quantity" placeholder="Number of Meals" required />
+      <button type="submit">Post Donation</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Recent Donations</h2>
+    <ul id="donationList"></ul>
+  </section>
+ </center>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
