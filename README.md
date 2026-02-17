@@ -1,6 +1,7 @@
 # 🍛 AnnaSetu
 ## 🚀 Real-Time Food Redistribution Platform
 <p align="center"> <b>Connecting surplus food to those who need it — instantly.</b> </p> <p align="center"> 🌐 <a href="https://foodbridge-d9a74.web.app/">Live Demo</a> • ☁️ Firebase Hosted • ⚡ Real-Time Firestore </p>
+
 ## 🌍 Overview
 AnnaSetu is a cloud-based web application that connects restaurants (donors) with NGOs (receivers) to reduce food wastage through real-time digital coordination.
 
@@ -119,6 +120,7 @@ Transparency
 Response time
 
 Efficiency in food redistribution
+
 
 
 
