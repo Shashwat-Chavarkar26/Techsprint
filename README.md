@@ -19,7 +19,7 @@ Logical separation of access and visibility
 ## 📝 One-Click Surplus Posting
 Restaurants can quickly post:
 
-## 🍱 Food details
+🍱 Food details
 
 🔢 Number of meals
 
@@ -119,5 +119,6 @@ Transparency
 Response time
 
 Efficiency in food redistribution
+
 
 
